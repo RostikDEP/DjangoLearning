@@ -22,6 +22,5 @@ from UserProfile.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
     path('', include("UserProfile.urls"))
 ]

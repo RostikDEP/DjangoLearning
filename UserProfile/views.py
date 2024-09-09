@@ -8,3 +8,7 @@ def index(request):
 
 def register(request):
     return HttpResponse("<h1>Registration Form</h1>")
+
+
+def userId(request, userid):
+    return HttpResponse(f"<h1>This pages about user № {userid}</h1>")
