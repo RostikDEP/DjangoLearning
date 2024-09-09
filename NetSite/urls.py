@@ -24,4 +24,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("UserProfile.urls"))
 ]
-handler400 = PageNotFound
+handler404 = PageNotFound
