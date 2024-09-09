@@ -7,7 +7,7 @@ def index(request):
 
 
 def register(request):
-    return HttpResponse("<h1>Registration Form</h1>")
+    return HttpResponse(f"<h1>Try to register user with name {request.GET['name']}, age:{request.GET['age']}</h1>")
 
 
 def userId(request, userid):
